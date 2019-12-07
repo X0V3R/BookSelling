@@ -1,0 +1,1 @@
+Xin chào <?php echo $hoten;?>,Bạn xem <?php echo $view1;?>
