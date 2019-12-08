@@ -7,6 +7,8 @@
         <div class="card-title">{{$book->name}}</div>
         <p class="card-text">{{$book->detail}}</p>
         <p class="card-text">{{$book->cost}}</p>
+        <p class="card-text">{{$book->id_category}}</p>
+        <p class="card-text">{{$book->id_au}}</p>
     </div>
         @endforeach
     </div>

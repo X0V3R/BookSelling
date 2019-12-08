@@ -99,7 +99,7 @@ class BookController extends Controller
 
     /**
      * Update the specified resource in storage.
-     * FIXME:Sửa lỗi validate
+     * 
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
