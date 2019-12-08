@@ -134,6 +134,7 @@ class BookController extends Controller
             $image_name = $image->getClientOriginalName();
             $image->move(public_path('img'), $image_name);
          }
+         //FIXME:SỬA PHẦN VALIDATE
          else {
             $request->validate([
                 'name' => 'required',
