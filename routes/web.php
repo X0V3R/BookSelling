@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'BookController@index')->name('home');
+Route::get('/', 'BookController@index','CategoryController@index')->name('home');
 Auth::routes();
 /**
  * Book router

@@ -16,7 +16,8 @@ class BookController extends Controller
     public function index()
     {
         $data = DB::table('books')->paginate(5);
-        return view('home', compact('data'));
+        $cate = DB::table('category')->get();
+        return view('home', compact('data','cate'));
     }
 
     /**
