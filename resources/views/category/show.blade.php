@@ -1,14 +1,10 @@
-
-    <div class="general row">
-        <div class="category col-lg-2 col-sm-3">
-            <nav class="navbar bg-light">
-                @foreach ($cate as $cate)
-                <ul class="navbar-nar">
-                    <li class="nav-item-active">
-                     <a href="" class="nav text-dark">{{$cate->name}}</a>   
-                    </li>
-                </ul>
-                @endforeach
-            </nav>
-        </div>
-    </div>
+<nav class="col-sm-3 sidenav">
+    <ul class="list-group" data-offset-top="205">
+            <li class="list-group-item list-group-item-primary text-center">MENU</li>
+        @foreach ($cate as $category)
+            <li class="list-group-item">
+                <a class="nav-link text-dark" href="#">{{$category->name}}</a>
+            </li>
+        @endforeach
+    </ul>
+</nav>

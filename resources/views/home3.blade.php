@@ -90,15 +90,15 @@
 
     <div class="content col-lg-10 col-sm-9">
       <div class="row">
-      <?php foreach($books as $book): ?>
-          <div class="col-sm-3 col-lg-3">
+      @foreach ($data as $book)
+      <div class="col-sm-3 col-lg-3">
             
-            <img class="img-fluid img-thumbnail" src='<?php echo $book->image ?>'>
-            
-            <p><?php echo $book->name?></p>
-            <p><?php echo "Gia : ".$book->cost."VND"?></p>
-          </div>
-        <?php endforeach ?>  
+          <img class="img-fluid img-thumbnail" src='{{$book->image}}'>
+          
+          <p>{{$book->name}}</p>
+          <p><{{$book->cost}}</p>
+        </div>
+      @endforeach
         
         
       </div>
